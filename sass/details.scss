@@ -1,0 +1,168 @@
+$white: #fdfdfd;
+$black: #252831;
+$dkgray: #333;
+$ltgray: #eee;
+$purple: #600060;
+$green: #08ff08;
+
+
+#breadcrumb ul {
+  list-style: none;
+}
+
+/* Display list items side by side */
+#breadcrumb li {
+  display: inline;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+#breadcrumb li+li:before {
+  padding: 8px;
+  color: $black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+#breadcrumb li a {
+  color: $purple;
+  text-decoration: none;
+}
+
+/* ====================== Restaurant Details ====================== */
+#restaurant-name {
+  color: $purple;
+  font-size: 20pt;
+  font-weight: 200;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+.restaurant-img {
+  /*width: 80%;*/
+  border-radius: 15px 0 0 0;
+}
+
+.restaurant-map {
+  max-height: 150px;
+}
+
+#restaurant-cuisine {
+  background-color: $dkgray;
+  color: $white;
+  font-size: 12pt;
+  font-weight: 300;
+  letter-spacing: 10px;
+  margin: 0 0 20px;
+  padding: 2px 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+#restaurant-address {
+  font-size: 16pt;
+  margin: 10px 0;
+  text-align: center;
+}
+
+#restaurant-hours {
+  display: block;
+  width: 100%;
+}
+
+#restaurant-hours td {
+  font-size: 12pt;
+  margin: 10px 0;
+}
+
+#restaurant-container,
+#reviews-container {
+  border-bottom: 1px solid $ltgray;
+  border-top: 1px solid $white;
+  padding: 20px;
+  text-align: center;
+}
+
+#reviews-container h2 {
+  color: $purple;
+  font-size: 24pt;
+  font-weight: 300;
+  letter-spacing: -1px;
+  padding-bottom: 1pt;
+}
+
+#reviews-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: outside none none;
+}
+
+#reviews-list li {
+  background-color: $white;
+  border: 2px solid $ltgray;
+  border-radius: 25px 0;
+  display: inline;
+  margin: 15px;
+  overflow: hidden;
+  text-align: left;
+  min-width: 270px;
+  max-width: 300px;
+}
+
+@media only screen and (max-width: 555) {
+  #reviews-list li {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 830) {
+  #reviews-list li {
+    max-width: 40%;
+  }
+}
+
+@media only screen and (min-width: 831) {
+  #reviews-list li {
+    max-width: 270px;
+  }
+}
+
+#reviews-list li h5 {
+  padding: 20px 20px 20px 20px;
+  background-color: $dkgray;
+  color: $white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12pt;
+  font-weight: 300;
+  letter-spacing: 1px;
+  width: 100%;
+}
+
+#reviews-list span {
+  color: $ltgray;
+  padding-right: 30px;
+}
+
+#reviews-list li h6 {
+  margin: 20px;
+  display: inline;
+  background-color: $purple;
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 10pt;
+  letter-spacing: 1px;
+  border-radius: 5px 0;
+  color: $white;
+  width: 100%;
+}
+
+#reviews-list li p {
+  margin: 20px;
+  width: 90%;
+  font-size: 12pt;
+}

@@ -1,0 +1,21 @@
+{
+  "short_name": "GWG MWS Stg2",
+  "name": "GWG ND Restaurant Reviews App",
+  "icons": [
+    {
+      "src": "/img/restaurant192px.svg",
+      "type": "image/svg",
+      "sizes": "192x912"
+    },
+    {
+      "src": "/img/restaurant512px.svg",
+      "type": "image/svg",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/index.html",
+  "background_color": "#eee",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#600060"
+}
