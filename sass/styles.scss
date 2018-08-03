@@ -93,6 +93,17 @@ header h1 a {
   background-color: $ltgray;
 }
 
+@media screen and (max-width: 768px) {
+  #maincontent {
+    display: flex;
+    flex-direction: column;
+  }
+  #maincontent section:first-child {
+    order: 2;
+    margin: 10%
+  }
+}
+
 #footer {
   background-color: $dkgray;
   color: $white;
@@ -119,6 +130,12 @@ nav {
   height: 400px;
   background-color: $ltgray;
 }
+
+// @media only screen and (max-width: 768px) {
+//   #map {
+//     display: none;
+//   }
+// }
 
 
 /* ====================== Restaurant Filtering ====================== */
